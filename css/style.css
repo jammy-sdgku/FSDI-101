@@ -19,6 +19,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   overflow-y:auto;
+  padding-bottom: 20px;
 }
 
 .main-flex {
@@ -36,16 +37,6 @@ body {
   align-items:flex-start;
   height:300px; 
   text-align: center;
-}
-
-.footer-flex {
-  display:flex;
-  flex-direction:row;
-  justify-content:space-between;
-  align-items:center;
-  text-align: center;
-  height: 70px;
-  background-color: black;
 }
 
 .container {
@@ -111,7 +102,7 @@ img {
 
 /*Utilities*/
 
-a:link {
+:link {
   color: white;
   text-decoration: none;
 }
@@ -175,6 +166,17 @@ button {
     height: 300px;
 }
 
+.contact-header {
+  background-color: black;  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  color: white;
+  height: 80px;
+}
+
 .divOB {
     background-position: center;
     background-repeat: no-repeat;
@@ -203,6 +205,50 @@ button {
   position: relative;
 }
 
+/*form section*/
+
+.formContainer{
+    width: 30%;
+    height: 45vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+
+#myForm{
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.formDetails{
+    margin: 1rem 0;
+}
+
+input{
+    width: 100%;
+    padding: .6rem 0;
+    outline: none;
+    font-size: 1rem;
+}
+
+input:focus{
+    outline: 1px solid #064247;
+}
+
+/*footer section*/
+
+.footer-flex {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  text-align: center;
+  background-color: black;
+  height: 2.5rem;
+}
+
 .divfooter {
   background-position: center;
   background-repeat: no-repeat;
@@ -212,6 +258,7 @@ button {
 
 footer {
   position: fixed;
+  margin-top: auto;
   display: inline;
   left: 0;
   bottom: 0;

@@ -4,39 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
-    <title>Read More</title>
+    <title>Contact</title>
 </head>
 <body>
 
 <!--header code -->
-  <header class="primary-header">
+  <header class="contact-header">
     <div class="header-flex">
-        <h1>Contact Us</h1>
+        <h1>Coffee Blog</h1>
         <nav><a href= "./index.html">Home</a>&nbsp;	&nbsp;
                 <a href= "./aboutUs.html">About Us</a>	&nbsp;	&nbsp;
                 <a href= "./courses.html">Courses</a>
         </nav>
-    </div>
-        <h2>Coffee Blog with Tips and Courses</h2>
-        <p>Learn from the experts with the best recipes and tips.</p>           
+   
 </header>  
-  <h1>Contact Us</h1> 
   
-<!--footer code-->  
-  <footer class="footer-flex">
-    <section class="footerH-container">
-        <div class="divfooter">
-            <h2>Coffee Blog</h2>
-        </div>
-    </section>
-    <section class="footerL-container">
-        <div class="divfooter">
-            <nav><a href= "./index.html">Home</a>&nbsp;	&nbsp;
-                <a href= "./aboutUs.html">About Us</a>	&nbsp;	&nbsp;
-                <a href= "./courses.html">Courses</a>
-            </nav>
-        </div>
-    </section>
-</footer> 
+<img src="./img/contact.jpg" alt="top coffee cups">
+    <div class="formContainer">
+        <header>
+            <h1>Contact Us</h1>
+        </header>
+
+        <form id="myForm">
+            <div class="formDetails">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter name here.">
+            </div>
+
+            <div class="formDetails">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter email here.">
+            </div>
+
+            <div class="formDetails">
+                <label for="message">Message:</label><br>
+                <textarea rows="4" cols="50" id="message" name="message" placeholder="Enter your comments here."></textarea>
+            </div>
+            <div>
+            <button id="button" type="button" onclick="alert('Thanks for contacting us!')">Send</button>
+            </div>
+        </form> 
+    </div>
 </body>
+
+<!--footer code-->
+<footer class="footer-flex">
+                <section class="footerH-container">
+                    <div class="divfooter">
+                        <h2>Coffee Blog</h2>
+                    </div>
+                </section>
+                <section class="footerL-container">
+                    <div class="divfooter">
+                        <nav><a href= "./aboutUs.html">About Us</a>	&nbsp;	&nbsp;
+                            <a href= "./courses.html">Courses</a>	&nbsp;	&nbsp;
+                            <a href= "./contacts.html">Contact</a></nav>
+                    </div>
+                </section>
+            </footer>
 </html>
